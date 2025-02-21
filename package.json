@@ -1,0 +1,19 @@
+{
+  "name": "save-location-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "build": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Aang Solihin",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1"
+  }
+}
