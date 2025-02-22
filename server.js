@@ -37,7 +37,7 @@ app.get('/data', async (req, res) => {
     }
 })
 
-app.delete('/delete', async (req, res) => {
+app.get('/delete', async (req, res) => {
     try {
         await Location.deleteMany()
         res.json({ message: "All data was successfully deleted." })
