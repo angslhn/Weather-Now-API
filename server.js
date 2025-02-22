@@ -37,6 +37,14 @@ app.get('/data', async (req, res) => {
     }
 })
 
+app.delete('/delete', async (req, res) => {
+    try {
+        await Location.deleteMany()
+    } catch {
+        throw new Error("Failed to delete data from database!")
+    }
+})
+
 app.get('/image', async (req, res) => {
     try {
         const data = await Image.find()
